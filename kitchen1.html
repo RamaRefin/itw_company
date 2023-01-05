@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kitchen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="kitchen.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <img
+          src="img/cheflogo.svg"
+          alt="Logo"
+          width="50"
+          height="50"
+          class="d-inline-block align-text-top"
+        />
+        <a class="navbar-brand" href="#">Fin Kitchen</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main-image -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" carousel-control-width="15%">
+          <img
+            src="img/minisandwich.jpg"
+            height="350"
+            class="d-block w-100"
+            alt="appetizer"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/chickencordon.jpg"
+            height="350"
+            class="d-block w-100"
+            alt="maincourse"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/dessert.jpg"
+            height="350"
+            class="d-block w-100"
+            alt="dessert"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- tittle -->
+    <div class="tittle1">
+      <div class="tittle-text">
+        <h1>THIS IS OUR MENU !</h1>
+      </div>
+    </div>
+
+    <!-- cardbox -->
+    <div class="cardbox">
+      <div class="card" style="width: 18rem">
+        <img src="img/nasgorayam.jpg" class="card-img-top" alt="nasgor" />
+        <div class="card-body">
+          <h5 class="card-title">Fried rice chicken</h5>
+          <p class="card-text">
+            Nasi goreng dengan bumbu khas nusantara dan diberi toping daging
+            ayam yang lezat yang membuat citra rasa menjadi menggoda untuk
+            disantap.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="img/nasgorkampung.jpg" class="card-img-top" alt="nasgorkm" />
+        <div class="card-body">
+          <h5 class="card-title">Special Fried rice</h5>
+          <p class="card-text">
+            Nasi goreng dengan bumbu khas nusantara dan diberi toping beraneka
+            daging yang lezat yang membuat citra rasa menjadi menggoda untuk
+            disantap.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="img/nasgorspod.jpg" class="card-img-top" alt="nasgorsp" />
+        <div class="card-body">
+          <h5 class="card-title">Seafood Fried rice</h5>
+          <p class="card-text">
+            Nasi goreng dengan bumbu khas nusantara dan diberi macam² seafood
+            yang lezat & enak yang membuat citra rasa menjadi menggoda untuk
+            disantap.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="img/nasgorspsl.jpg" class="card-img-top" alt="nasgorspsl" />
+        <div class="card-body">
+          <h5 class="card-title">Kampung Fried Rice</h5>
+          <p class="card-text">
+            Nasi goreng dengan bumbu khas nusantara dan diberi dipadukan dengan
+            telor yang lezat yang membuat citra rasa menjadi menggoda untuk
+            disantap.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- carbox2 -->
+
+    <div class="cardbox2">
+      <div class="card" style="width: 18rem">
+        <img src="img/balbala.jpg" class="card-img-top" alt="balabala" />
+        <div class="card-body">
+          <h5 class="card-title">Bala Bala</h5>
+          <p class="card-text">
+            Cemilan khas indonesia yang terdiri dari sayur sayuran dan enak
+            disantap pagi siang dan malam.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/tahu.jpg" class="card-img-top" alt="tahu" />
+        <div class="card-body">
+          <h5 class="card-title">Tahu Gejrot</h5>
+          <p class="card-text">
+            Tahu yang lezat dan di beri kuah air cuka yang sangat enak dan gurih
+            lalu di beri cabai dan bawang.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/cireng.jpg" class="card-img-top" alt="cireng" />
+        <div class="card-body">
+          <h5 class="card-title">Cireng Bumbu Rujak</h5>
+          <p class="card-text">
+            Cireng lezat dan dibalut dengan teksture luar yang krispi lalu di
+            cocol dengan bumbu rujak.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/lumpia.jpg" class="card-img-top" alt="lumpia" />
+        <div class="card-body">
+          <h5 class="card-title">Lumpia</h5>
+          <p class="card-text">
+            Lumpia yang di goreng renyah dan di isi dengan rebung yang sangat
+            nikmat lalu di santap dengan cabai.
+          </p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

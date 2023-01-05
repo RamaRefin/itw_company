@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "avenir next", serif;
+  overflow-x: hidden;
+}
+
+.carousel-item img {
+  height: 500px;
+  align-items: center;
+}
+
+.tittle-text {
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.tittle-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 1000px;
+  background-color: black;
+}
+
+.cardbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cardbox2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+}

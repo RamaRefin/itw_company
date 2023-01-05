@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.video-text {
+  position: relative;
+  color: white;
+  font-family: "avenir next", serif;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "avenir next", serif;
+  transition: all 2s;
+}
+
+button:hover {
+  scale: 1.3;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
