@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  top: 0;
+  background-color: white;
+  font-family: "avenir next", serif;
+  overflow-x: hidden;
+}
+
+.text-form {
+  text-align: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.form-regis {
+  width: 100%;
+  padding: 30px 50px;
+}
