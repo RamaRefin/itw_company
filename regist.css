@@ -12,6 +12,8 @@ body {
   overflow-x: hidden;
 }
 
+/* form regist */
+
 .text-form {
   text-align: center;
   justify-content: space-around;
@@ -24,6 +26,13 @@ body {
 .form-regis {
   width: 100%;
   padding: 30px 50px;
+  margin: 100px 0;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 /* footer section */
