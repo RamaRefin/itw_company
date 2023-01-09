@@ -95,52 +95,58 @@
         <h1>Contact US</h1>
       </div>
     </div>
-    <div class="form-contact">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Your Name</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder=""
-        />
+    <form name="Contact-us">
+      <div class="form-contact">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Your Name</label
+          >
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Your Email</label
+          >
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="email@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Phone Number</label
+          >
+          <input
+            type="text"
+            name="phonenumber"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="+62 xxxx xxxx xxxx"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Message For us !</label
+          >
+          <textarea
+            class="form-control"
+            name="message"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Your Email</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="email@example.com"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Phone Number</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="+62 xxxx xxxx xxxx"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Messesage For us !</label
-        >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+    </form>
 
     <!-- footer section -->
 
@@ -190,5 +196,17 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxxdbK2AIVQxOHlwp3DIRYbwf8KW1YUQrkErMZIvqxVtnSPUnRbJt7ycLoiTnw7YS91/exec";
+      const form = document.forms["Contact-us"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
