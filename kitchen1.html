@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="kitchen.css" />
   </head>
   <body>
@@ -100,7 +101,11 @@
       class="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-inner">
+      <div
+        class="carousel-inner"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <div class="carousel-item active" data-bs-interval="2000">
           <img src="img/minisandwich.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
@@ -157,7 +162,7 @@
     </div>
 
     <!-- cardbox -->
-    <div class="cardbox">
+    <div class="cardbox" data-aos="fade-up" data-aos-duration="2000">
       <div class="row row-cols-4">
         <div class="card" style="width: 18rem">
           <img src="img/nasgorayam.jpg" class="card-img-top" alt="nasgor" />
@@ -223,7 +228,7 @@
 
     <!-- carbox2 -->
 
-    <div class="cardbox2">
+    <div class="cardbox2" data-aos="fade-up" data-aos-duration="2000">
       <div class="row row-cols-2">
         <div class="card" style="width: 18rem">
           <img src="img/balbala.jpg" class="card-img-top" alt="balabala" />
@@ -278,7 +283,7 @@
 
     <!-- cardbox3 -->
 
-    <div class="cardbox3">
+    <div class="cardbox3" data-aos="fade-up" data-aos-duration="2000">
       <div class="row row-cols-2">
         <div class="card" style="width: 18rem">
           <img src="img/sopiga.jpg" class="card-img-top" alt="sop" />
@@ -400,5 +405,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
